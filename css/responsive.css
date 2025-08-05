@@ -10,8 +10,57 @@
   } */
 
   /* 👇👇👇 Add the styles that belong to the DESKTOP view only beneath 👇👇👇 */
+  /* Desktop [1024+] */
+
+  /* Auto layout */
+  .desktop-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: relative;
+    width: 1024px;
+    height: 1737px;
+
+    background: #ffffff;
+  }
 }
 
 /* 👇👇👇 Add the media rule and the styles that are common within the TABLET and MOBILE views beneath 👇👇👇 */
+/* Tablet [768 - 1023] */
+
+@media (max-width: 1023px) and (min-width: 768px) {
+  /* Auto layout */
+  .tablet-mobile-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: relative;
+    width: 768px;
+    height: 3183px;
+
+    background: #ffffff;
+  }
+}
 
 /* 👇👇👇 Add the media rule and the styles that belong to the MOBILE view only beneath 👇👇👇 */
+/* Mobile [360 - 767] */
+
+@media (max-width: 767px) and (min-width: 360px) {
+  /* Auto layout */
+  .mobile-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: relative;
+    width: 360px;
+    height: 3957px;
+
+    background: #ffffff;
+  }
+}
