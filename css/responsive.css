@@ -4,26 +4,14 @@
   * Add the media rule and the styles that belong to the MOBILE view only
 */
 
+/* 👇👇👇 Add the styles that belong to the DESKTOP view only beneath 👇👇👇 */
+/* Desktop [1024+] */
 @media (min-width: 1024px) {
-  /* .top-navigation .trigram {
+  .trigram {
     display: none;
-  } */
-
-  /* 👇👇👇 Add the styles that belong to the DESKTOP view only beneath 👇👇👇 */
-  /* Desktop [1024+] */
-
-  /* Auto layout */
-  .desktop-layout {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-
-    position: relative;
-    width: 1024px;
-    height: 1737px;
-
-    background: #ffffff;
+  }
+  .top-navigation a:hover {
+    color: chartreuse;
   }
 }
 
@@ -32,17 +20,21 @@
 
 @media (max-width: 1023px) and (min-width: 768px) {
   /* Auto layout */
-  .tablet-mobile-layout {
+  .portfolio-list {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-
-    position: relative;
-    width: 768px;
-    height: 3183px;
-
-    background: #ffffff;
+  }
+  portfolio-item {
+    display: flex;
+    flex-direction: row;
+  }
+  .top-navigation a {
+    display: none;
+  }
+  .trigram {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
   }
 }
 
@@ -50,17 +42,13 @@
 /* Mobile [360 - 767] */
 
 @media (max-width: 767px) and (min-width: 360px) {
-  /* Auto layout */
-  .mobile-layout {
+  .top-navigation {
+    align-self: start;
+    display: none;
+  }
+
+  .portfolio-list {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-
-    position: relative;
-    width: 360px;
-    height: 3957px;
-
-    background: #ffffff;
   }
 }
